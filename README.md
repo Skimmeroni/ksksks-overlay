@@ -6,11 +6,12 @@ were to change in accord, these ebuilds will be deleted. In particular:
   optional, with the addition of a dedicated flag. There is actually an open
   bug report concerning this (https://bugs.gentoo.org/919359).
 - dev-lang/R: removed a dependency on ghostscript. According to
-  https://cran.r-project.org/doc/manuals/r-patched/R-admin.html, ghostscript
-  is "desireable" but not mandatory: to generate pdf plots, you only need
-  cairo. I haven't been able to find why the dependency on ghostscript is
-  enforced, but I suspect it's because it counts as automagic
-  (https://wiki.gentoo.org/wiki/Project:Quality_Assurance/Automagic_dependencies).
+  https://cran.r-project.org/doc/manuals/r-patched/R-admin.html,
+  ghostscript is "desireable" but not mandatory: to generate pdf
+  plots, you only need cairo. Maybe because it's automagic
+  (https://wiki.gentoo.org/wiki/Project:Quality_Assurance/Automagic_dependencies)
+  or because it's a runtime dependency. Also filters LTO (R handles
+  LTO on its own).
 - x11-misc/compose-tables: added a patch that drops the dependency on X. This has
   been referenced in a bug report (https://bugs.gentoo.org/849770), but will not
   be implemented (and rightfully so) because it should be dealt with by upstream
