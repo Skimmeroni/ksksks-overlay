@@ -18,6 +18,9 @@ were to change in accord, these ebuilds will be deleted. In particular:
   (https://gitlab.freedesktop.org/xorg/lib/libx11/-/issues/122).
 - sci-biology/biopython: much more packages in the main repo are marked as
   dependencies, but https://biopython.org/wiki/Download marks them as optional.
+- app-text/xournalpp: turned many hardwired dependencies into optional components.
+  Also, preventing man pages compression with a patch is no longer necessary
+  (A directive instructs CMake to do so).
 
 Other ideas:
 
@@ -25,7 +28,6 @@ Other ideas:
 - app-arch/libarchive: libarchive optionally depends on openssl, but in the main
   repo is enforced;
 - www-client/lynx: dired is optional;
-- app-text/xournalpp: many, many more flags should be introduced.
 
 Also, many multimedia libraries expose a 'tools' configure option of sort that in
 the main repo is absent.

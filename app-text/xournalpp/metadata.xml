@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>dilfridge@gentoo.org</email>
+	</maintainer>
+	<use>
+		<flag name="qpdf">Optimize exported PDF files using qpdf</flag>
+		<flag name="portaudio">Enable audio recording using portaudio</flag>
+		<flag name="sourceview">Enable syntax highlight for TeX using GtkSourceView</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">xournalpp/xournalpp</remote-id>
+	</upstream>
+</pkgmetadata>
