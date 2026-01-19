@@ -24,10 +24,11 @@ were to change in accord, these ebuilds will be deleted. In particular:
 
 Other ideas:
 
-- media-gfx/graphviz: libgd could be disabled.
-- app-arch/libarchive: libarchive optionally depends on openssl, but in the main
-  repo is enforced;
-- www-client/lynx: dired is optional;
-
-Also, many multimedia libraries expose a 'tools' configure option of sort that in
-the main repo is absent.
+- media-gfx/graphviz: libgd could be disabled, only allowing vector formats.
+  However, packages that use Graphviz for testing could very well expect it
+  to (also) support raster formats. Probably not worth it.
+- app-arch/libarchive: has an optional dependency on OpenSSL which in the main
+  repo is enforced. Mostly irrelevant, if not for a security standpoint I suppose.
+- www-client/lynx: dired is optional. Not a big deal, should be safe to implement.
+- Many multimedia libraries expose a 'tools' configure option of sort that in
+  the main repo is absent. Only of interest from a disk space standpoint.
