@@ -21,6 +21,9 @@ were to change in accord, these ebuilds will be deleted. In particular:
 - app-text/xournalpp: turned many hardwired dependencies into optional components.
   Also, preventing man pages compression with a patch is no longer necessary
   (A directive instructs CMake to do so).
+- net-libs/glib-networking: allows one to choose between OpenSSL and GnuTLS,
+  instead of enforcing the latter. The ebuild in the main repo forbids this
+  choice because the OpenSSL backend is considered unreliable by upstream.
 
 Other ideas:
 
