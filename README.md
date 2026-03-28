@@ -1,6 +1,9 @@
-These ebuilds have close to no difference to those found in the main Gentoo
-repository, aside for a couple of nudges here and there. If the main repo
-were to change in accord, these ebuilds will be deleted. In particular:
+I couldn't find sdl3-gfx anywhere so I've put it here. It's a poorly-cooked
+ebuild but it works.
+
+The remaining ebuilds have close to no difference to those found in the main
+Gentoo repository, aside for a couple of nudges here and there. If the main
+repo were to change in accord, these ebuilds will be deleted. In particular:
 
 - sys-apps/portage: the dependency on getuto is changed from mandatory
   to optional, with the addition of a dedicated flag. There is actually

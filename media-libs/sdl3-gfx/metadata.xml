@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="project">
+		<email>games@gentoo.org</email>
+		<name>Gentoo Games Project</name>
+	</maintainer>
+	<longdescription lang="en">
+		The SDL3_gfx library provides the basic drawing functions such
+		as lines, circles or polygons provided by SDL_gfx on SDL3 against
+		renderers of SDL3.
+
+		The current components of the SDL3_gfx library are:
+
+		* Graphic Primitives (SDL3_gfxPrimitives.h, SDL3_gfxPrimitives.c)
+		* Surface Rotozoomer (SDL3_rotozoom.h, SDL3_rotozoom.c)
+		* Framerate control (SDL3_framerate.h, SDL3_framerate.c)
+		* MMX image filters (SDL3_imageFilter.h, SDL3_imageFilter.c)
+		* Build-in 8x8 Font (SDL3_gfxPrimitives_font.h)
+	</longdescription>
+</pkgmetadata>
