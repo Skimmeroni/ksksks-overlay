@@ -1,4 +1,4 @@
-# Copyright 2020-2025 Gentoo Authors
+# Copyright 2020-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -18,7 +18,7 @@ KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~mips ppc ppc64 ~riscv ~s390 ~spar
 
 src_prepare() {
 	default
-	eapply "${FILESDIR}"/compose-tables-1.8.12-compose-only.patch
+	eapply "${FILESDIR}"/compose-tables-1.8.13-compose-only.patch
 	touch keysymdef.h || die
 }
 
