@@ -19,9 +19,6 @@ repo were to change in accord, these ebuilds will be deleted. In particular:
   but will not be implemented (and rightfully so) because it should be dealt
   with by upstream
   (https://gitlab.freedesktop.org/xorg/lib/libx11/-/issues/122).
-- sci-biology/biopython: much more packages in the main repo are marked
-  as dependencies, but https://biopython.org/wiki/Download states that
-  they are optional.
 - app-text/xournalpp: turned many hardwired dependencies into optional
   components. Also, preventing man pages compression with a patch is no
   longer necessary (A directive instructs CMake to do so).
